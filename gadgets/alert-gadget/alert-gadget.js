@@ -8,6 +8,12 @@ define(function(require, exports, module) {
     return UI.registerGadget("alert-gadget", Empty.extend({
         TEMPLATE: `<div class="my-alert-gadget"></div>`,
 
+        setup: function()
+        {
+            debugger;
+            this.get("/projects/{projectId}/documents/{documentId}", this.index);
+        },
+
         afterSwap: function(el, model, context, callback)
         {
             alert("You have permission to enter!");
