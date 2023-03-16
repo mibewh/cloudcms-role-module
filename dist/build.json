@@ -2,8 +2,8 @@
   "files": [
     "index.js",
     "uninstall.js",
-    "install.js",
     "module.json",
+    "install.js",
     "config/roles/blocks/default/regions/document-properties.json"
   ]
 }
