@@ -1,0 +1,15 @@
+{
+    "evaluator": "uri-match",
+    "condition": "/projects/{projectId}/documents/{documentId}",
+    "config": {
+        "regions": {
+            "right4": {
+                "type": "alert-gadget",
+                "config": {
+                    "chrome": false
+                },
+                "allowAuthority": ["manager"]
+            }
+        }
+    }
+}
