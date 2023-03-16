@@ -1,9 +1,9 @@
 {
   "files": [
     "index.js",
-    "module.json",
     "uninstall.js",
     "install.js",
+    "module.json",
     "config/roles/blocks/default/regions/document-properties.json"
   ]
 }

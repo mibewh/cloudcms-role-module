@@ -1,14 +1,16 @@
 {
-    "evaluator": "uri-match",
-    "condition": "/projects/{projectId}/documents/{documentId}",
+    "evaluator": "and",
+    "condition": [{
+        "evaluator": "current-user-has-authority",
+        "condition": "manager"
+    }, {
+        "evaluator": "uri-match",
+        "condition": "/projects/{projectId}/documents/{documentId}"
+    }],
     "config": {
         "regions": {
             "right4": {
-                "type": "alert-gadget",
-                "config": {
-                    "chrome": false
-                },
-                "allowAuthority": ["manager"]
+                "type": "alert-gadget"
             }
         }
     }
