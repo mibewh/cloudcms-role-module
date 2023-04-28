@@ -8,6 +8,7 @@ define(function(require, exports, module) {
         setup: function()
         {
             this.get("/projects/{projectId}/documents/{documentId}", this.index);
+            this.get("/projects/{projectId}/content/{qname}/documents/{documentId}", this.index);
         },
 
         afterSwap: function(el, model, context, callback)
