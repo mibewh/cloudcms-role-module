@@ -1,0 +1,18 @@
+{
+    "config": {
+        "content-instances-list-selected-actions": [
+            {
+                "action": "export-download",
+                "remove": true
+            },
+            {
+                "action": "export-document",
+                "remove": true
+            },
+            {
+                "action": "export-email",
+                "remove": true
+            }
+        ]
+    }
+}
